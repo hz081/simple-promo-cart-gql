@@ -1,0 +1,42 @@
+{
+  "name": "simple-promo-cart-gql",
+  "version": "1.0.0",
+  "description": "simple promo cart graphql",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf build/app && rm -rf dist",
+    "build": "npm run clean && tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "start:production": "node dist/server.js",
+    "start": "nodemon ./src/server.ts --exec ts-node ./src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hz081/simple-promo-cart-gql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hz081/simple-promo-cart-gql/issues"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.16",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.5.8",
+    "inversify": "^5.0.1",
+    "prettier": "^1.19.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.6"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/graphql": "^14.5.0",
+    "@types/node-fetch": "^2.5.4",
+    "apollo-server-testing": "^2.9.16",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  }
+}

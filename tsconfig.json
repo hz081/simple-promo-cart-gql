@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "removeComments": true,
+    "allowJs": true,
+    "lib": ["dom", "es6"],
+    "types": ["reflect-metadata", "node", "jest"],
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+  "include": ["./src/**/*", "server.ts"],
+  "exclude": ["node_modules"]
+}
